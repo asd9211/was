@@ -1,0 +1,44 @@
+{
+  "port": 80,
+  "connectionPoolSize": 50,
+  "HTTP_ROOT": [
+    {
+      "host": "localhost",
+      "documentRoot": "C:/",
+      "indexFileName" : "index.html",
+      "error": [
+        {
+          "code": 403,
+          "page": "local403.html"
+        },
+        {
+          "code": 404,
+          "page": "local404.html"
+        },
+        {
+          "code": 500,
+          "page": "local500.html"
+        }
+      ]
+    },
+    {
+      "host": "nhn",
+      "documentRoot": "/home/was/",
+      "indexFileName" : "nhn-index.html",
+      "error": [
+        {
+          "code": 403,
+          "page": "nhn403.html"
+        },
+        {
+          "code": 404,
+          "page": "nhn404.html"
+        },
+        {
+          "code": 500,
+          "page": "nhn500.html"
+        }
+      ]
+    }
+  ]
+}
